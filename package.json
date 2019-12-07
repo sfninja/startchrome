@@ -1,0 +1,22 @@
+{
+  "name": "startchrome",
+  "version": "1.0.0",
+  "description": "startchrome google.com finds a Chrome and opens google.com using it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sfninja/startchrome.git"
+  },
+  "author": "ak239spb@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sfninja/startchrome/issues"
+  },
+  "homepage": "https://github.com/sfninja/startchrome#readme",
+  "bin": {
+    "startchrome": "./index.js"
+  }
+}
