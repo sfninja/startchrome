@@ -1,7 +1,7 @@
 {
-  "name": "startchrome",
+  "name": "run-chrome",
   "version": "1.0.0",
-  "description": "startchrome google.com finds a Chrome and opens google.com using it",
+  "description": "run-chrome google.com finds a Chrome and opens google.com using it",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
