@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sfninja/startchrome#readme",
   "bin": {
-    "startchrome": "./index.js"
+    "runchrome": "./index.js"
   }
 }

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Copyright 2019 Aleksei Koziatinskii All rights reserved.
  *
