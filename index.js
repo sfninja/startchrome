@@ -21,10 +21,22 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync, execSync, spawn } = require('child_process');
 
+const CACHE = path.join(__dirname, '.cache');
 const newLineRegex = /\r?\n/;
 
 (async function main() {
-  const exe = await findChrome();
+  let exe;
+  try {
+    if (process.argv.indexOf('--refresh-cache') === -1)
+      exe = fs.readFileSync(CACHE, 'utf8');
+  } catch (e) {
+  }
+  if (!exe)
+    exe = await findChrome();
+  try {
+    fs.writeFileSync(CACHE, exe, 'utf8');
+  } catch (e) {
+  }
   if (exe) {
     spawn(
         exe,
